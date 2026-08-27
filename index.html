@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TBIT Ideal Competitive Classes | JMI & AMU Entrance</title>
+
+<meta name="description"
+content="TBIT Ideal Competitive Classes — JMI and AMU entrance preparation in Zakir Nagar, Okhla, New Delhi.">
+
+<style>
+:root{
+    --navy:#07131f;
+    --navy2:#0b1d2d;
+    --teal:#13c7c0;
+    --teal2:#06a9b8;
+    --white:#ffffff;
+    --muted:#6d7b88;
+    --line:#e8edf0;
+    --soft:#f5f8fa;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Inter,Segoe UI,Arial,sans-serif;
+    color:#17212b;
+    background:#fff;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:min(1180px,92%);
+    margin:auto;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index:10;
+    color:#fff;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(2,9,15,.85),
+        rgba(2,9,15,0)
+    );
+}
+
+.nav{
+    height:88px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-weight:900;
+    font-size:28px;
+    line-height:.85;
+}
+
+.logo-mark{
+    width:46px;
+    height:46px;
+
+    border-radius:13px;
+
+    background:
+    linear-gradient(
+        145deg,
+        #18d4cb,
+        #078ea0
+    );
+
+    display:grid;
+    place-items:center;
+
+    color:white;
+    font-size:23px;
+
+    box-shadow:
+    0 8px 24px rgba(19,199,192,.25);
+}
+
+.logo small{
+    display:block;
+
+    font-size:9px;
+    letter-spacing:1.2px;
+
+    color:#d8e4e9;
+
+    margin-top:5px;
+}
+
+.links{
+    display:flex;
+    gap:29px;
+
+    font-size:14px;
+    color:#dce6eb;
+}
+
+.links a{
+    transition:.2s;
+}
+
+.links a:hover{
+    color:var(--teal);
+}
+
+.nav-buttons{
+    display:flex;
+    gap:10px;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+
+    padding:13px 19px;
+
+    border-radius:8px;
+
+    font-size:14px;
+    font-weight:800;
+
+    transition:.2s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-teal{
+    background:
+    linear-gradient(
+        135deg,
+        var(--teal),
+        #08b5cf
+    );
+
+    color:white;
+
+    box-shadow:
+    0 10px 25px rgba(19,199,192,.18);
+}
+
+.btn-outline{
+    border:1px solid rgba(255,255,255,.7);
+
+    color:#fff;
+
+    background:rgba(0,0,0,.1);
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:685px;
+
+    color:#fff;
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+
+    background:
+    #07131f
+    url("jamia-century-gate-hero.jpg")
+    center/cover
+    no-repeat;
+}
+
+.hero:before{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        rgba(2,10,17,.96) 0%,
+        rgba(2,10,17,.84) 33%,
+        rgba(2,10,17,.33) 65%,
+        rgba(2,10,17,.28) 100%
+    ),
+
+    linear-gradient(
+        0deg,
+        rgba(3,10,16,.5),
+        transparent 40%
+    );
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+
+    padding-top:70px;
+}
+
+.eyebrow{
+    font-size:13px;
+
+    color:var(--teal);
+
+    font-weight:900;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:clamp(45px,6vw,72px);
+
+    line-height:1.02;
+
+    letter-spacing:-2.8px;
+
+    max-width:690px;
+}
+
+.hero h1 span{
+    color:var(--teal);
+}
+
+.hero-sub{
+    font-size:21px;
+
+    font-weight:700;
+
+    margin:23px 0 5px;
+
+    max-width:550px;
+}
+
+.hero-sub span{
+    color:var(--teal);
+}
+
+.hero p{
+    color:#d3dde2;
+
+    max-width:560px;
+
+    font-size:14px;
+
+    margin:15px 0 26px;
+
+    line-height:1.8;
+}
+
+.hero-actions{
+    display:flex;
+    gap:13px;
+    flex-wrap:wrap;
+}
+
+.tagline{
+    font-size:13px;
+
+    color:#d2dce2;
+
+    margin-top:22px;
+}
+
+/* ================= HIGHLIGHTS ================= */
+
+.highlights{
+    position:relative;
+
+    z-index:3;
+
+    margin-top:-88px;
+}
+
+.highlight-box{
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    background:
+    rgba(5,26,36,.94);
+
+    border:
+    1px solid
+    rgba(19,199,192,.24);
+
+    border-radius:14px;
+
+    box-shadow:
+    0 18px 45px rgba(0,0,0,.2);
+
+    overflow:hidden;
+}
+
+.highlight{
+    padding:24px 25px;
+
+    display:flex;
+
+    gap:15px;
+
+    align-items:flex-start;
+
+    border-right:
+    1px solid
+    rgba(255,255,255,.12);
+}
+
+.highlight:last-child{
+    border-right:0;
+}
+
+.hicon{
+    font-size:27px;
+
+    color:var(--teal);
+}
+
+.highlight h3{
+    font-size:16px;
+
+    color:white;
+
+    margin-bottom:5px;
+}
+
+.highlight p{
+    font-size:12px;
+
+    color:#b9c8d0;
+
+    line-height:1.55;
+}
+
+/* ================= CONTENT ================= */
+
+main{
+    background:#fff;
+}
+
+.content{
+    padding:28px 0 70px;
+}
+
+.top-grid{
+    display:grid;
+
+    grid-template-columns:
+    1.1fr 1fr 1fr 280px;
+
+    gap:18px;
+}
+
+.panel{
+    padding:26px 22px;
+
+    border:
+    1px solid
+    var(--line);
+
+    border-radius:10px;
+
+    background:#fff;
+
+    box-shadow:
+    0 8px 24px
+    rgba(10,30,45,.06);
+}
+
+.panel h2,
+.panel h3{
+    color:#0f2535;
+}
+
+.panel h2{
+    font-size:23px;
+}
+
+.panel h3{
+    font-size:17px;
+
+    margin-bottom:12px;
+}
+
+.panel p,
+.panel li{
+    color:#5e6d79;
+
+    font-size:13px;
+
+    line-height:1.75;
+}
+
+.kicker{
+    color:#08aaa8;
+
+    text-transform:uppercase;
+
+    letter-spacing:1.4px;
+
+    font-size:11px;
+
+    font-weight:900;
+
+    margin-bottom:8px;
+}
+
+.underline{
+    width:35px;
+
+    height:3px;
+
+    background:var(--teal);
+
+    margin:11px 0 17px;
+}
+
+/* ================= CHECK LIST ================= */
+
+.checks{
+    list-style:none;
+}
+
+.checks li{
+    margin:9px 0;
+}
+
+.checks li:before{
+    content:"✓";
+
+    display:inline-grid;
+
+    place-items:center;
+
+    width:18px;
+    height:18px;
+
+    border-radius:5px;
+
+    background:#e4f7f5;
+
+    color:#0baea8;
+
+    font-weight:900;
+
+    margin-right:8px;
+}
+
+/* ================= ADMISSION ================= */
+
+.admission{
+    background:
+    linear-gradient(
+        145deg,
+        #071827,
+        #112a3b
+    );
+
+    color:#fff;
+
+    border-color:#0f2536;
+}
+
+.admission h3{
+    color:var(--teal);
+
+    font-size:21px;
+}
+
+.admission p{
+    color:#d0dbe2;
+}
+
+.admission .btn{
+    width:100%;
+
+    margin-top:18px;
+}
+
+/* ================= COURSES ================= */
+
+.section{
+    padding:80px 0;
+}
+
+.section-head{
+    text-align:center;
+
+    max-width:690px;
+
+    margin:0 auto 38px;
+}
+
+.section-head h2{
+    font-size:42px;
+
+    letter-spacing:-1.5px;
+
+    color:#102535;
+}
+
+.section-head p{
+    color:var(--muted);
+
+    margin-top:10px;
+}
+
+.course-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:20px;
+}
+
+.course{
+    border:
+    1px solid
+    var(--line);
+
+    border-radius:15px;
+
+    padding:28px;
+
+    background:
+    linear-gradient(
+        180deg,
+        #fff,
+        #f8fbfc
+    );
+
+    box-shadow:
+    0 12px 32px
+    rgba(11,34,51,.06);
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.course:after{
+    content:"";
+
+    position:absolute;
+
+    right:-35px;
+    top:-35px;
+
+    width:110px;
+    height:110px;
+
+    border-radius:50%;
+
+    background:
+    rgba(19,199,192,.09);
+}
+
+.course-icon{
+    font-size:30px;
+
+    color:var(--teal);
+
+    margin-bottom:17px;
+}
+
+.course h3{
+    font-size:20px;
+
+    margin-bottom:9px;
+}
+
+.course p{
+    font-size:13px;
+
+    color:var(--muted);
+
+    line-height:1.7;
+}
+
+/* ================= WHY ================= */
+
+.why{
+    background:var(--soft);
+}
+
+.why-grid{
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:22px;
+
+    align-items:center;
+}
+
+.why-card{
+    background:#fff;
+
+    border:
+    1px solid
+    var(--line);
+
+    border-radius:16px;
+
+    padding:34px;
+}
+
+.why-card h2{
+    font-size:36px;
+
+    line-height:1.1;
+
+    color:#102535;
+}
+
+.why-card p{
+    color:var(--muted);
+
+    margin-top:15px;
+}
+
+.why-list{
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:13px;
+}
+
+.why-item{
+    background:#fff;
+
+    border:
+    1px solid
+    var(--line);
+
+    border-radius:12px;
+
+    padding:18px;
+
+    font-size:13px;
+
+    color:#344553;
+}
+
+.why-item b{
+    display:block;
+
+    color:#0c2739;
+
+    margin-bottom:4px;
+}
+
+.why-item span{
+    color:var(--teal);
+
+    font-size:19px;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    padding:75px 0;
+
+    background:
+    linear-gradient(
+        120deg,
+        #071827,
+        #0c3440
+    );
+
+    color:#fff;
+}
+
+.cta-inner{
+    text-align:center;
+
+    max-width:800px;
+
+    margin:auto;
+}
+
+.cta h2{
+    font-size:45px;
+
+    line-height:1.08;
+
+    letter-spacing:-1.5px;
+}
+
+.cta p{
+    color:#c8d5dc;
+
+    margin:14px 0 24px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    padding:65px 0;
+}
+
+.contact-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:18px;
+}
+
+.contact-box{
+    border:
+    1px solid
+    var(--line);
+
+    border-radius:13px;
+
+    padding:23px;
+
+    background:#fff;
+}
+
+.contact-box span{
+    display:block;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    font-size:10px;
+
+    color:#7b8993;
+
+    margin-bottom:7px;
+}
+
+.contact-box b{
+    font-size:14px;
+
+    color:#183041;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#071827;
+
+    color:#c6d2d9;
+
+    padding:30px 0;
+}
+
+.footer-row{
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    align-items:center;
+
+    font-size:12px;
+}
+
+.footer-row strong{
+    color:#fff;
+}
+
+/* ================= TABLET ================= */
+
+@media(max-width:950px){
+
+    .links{
+        display:none;
+    }
+
+    .top-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .highlight-box{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .highlight:nth-child(2){
+        border-right:0;
+    }
+
+    .highlight:nth-child(-n+2){
+        border-bottom:
+        1px solid
+        rgba(255,255,255,.12);
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:650px){
+
+    .nav{
+        height:74px;
+    }
+
+    .nav-buttons .btn-outline{
+        display:none;
+    }
+
+    .logo{
+        font-size:22px;
+    }
+
+    .logo-mark{
+        width:40px;
+        height:40px;
+    }
+
+    .hero{
+        min-height:650px;
+    }
+
+    .hero h1{
+        font-size:44px;
+    }
+
+    .hero-sub{
+        font-size:18px;
+    }
+
+    .highlights{
+        margin-top:-55px;
+    }
+
+    .highlight-box,
+    .top-grid,
+    .course-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .highlight{
+        border-right:0!important;
+
+        border-bottom:
+        1px solid
+        rgba(255,255,255,.12);
+    }
+
+    .highlight:last-child{
+        border-bottom:0;
+    }
+
+    .top-grid{
+        margin-top:25px;
+    }
+
+    .section{
+        padding:58px 0;
+    }
+
+    .section-head h2,
+    .cta h2{
+        font-size:34px;
+    }
+
+    .why-list{
+        grid-template-columns:1fr;
+    }
+
+    .footer-row{
+        flex-direction:column;
+
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+<div class="container nav">
+
+<a class="logo" href="#home">
+
+<div class="logo-mark">
+T
+</div>
+
+<div>
+TBIT
+
+<small>
+IDEAL COMPETITIVE CLASSES
+</small>
+
+</div>
+
+</a>
+
+
+<div class="links">
+
+<a href="#home">Home</a>
+
+<a href="#about">About Us</a>
+
+<a href="#courses">Courses</a>
+
+<a href="#why">Why TBIT?</a>
+
+<a href="#faculty">Faculty</a>
+
+<a href="#results">Results</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+
+<div class="nav-buttons">
+
+<a
+class="btn btn-teal"
+target="_blank"
+href="https://wa.me/919870167074">
+◉ WhatsApp
+</a>
+
+<a
+class="btn btn-outline"
+href="tel:+919870167074">
+☎ Call Us
+</a>
+
+</div>
+
+</div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="container hero-content">
+
+<div class="eyebrow">
+Entrance Excellence • Zakir Nagar, Okhla
+</div>
+
+
+<h1>
+
+TBIT IDEAL
+
+<br>
+
+<span>
+COMPETITIVE CLASSES
+</span>
+
+</h1>
+
+
+<div class="hero-sub">
+
+Your Trusted Partner for
+
+<br>
+
+<span>
+JMI & AMU
+</span>
+
+Entrance Preparation
+
+</div>
+
+
+<p>
+
+Focused, exam-oriented preparation designed
+to build conceptual clarity, smart strategy
+and confidence for competitive university
+entrance examinations.
+
+</p>
+
+
+<div class="hero-actions">
+
+<a
+class="btn btn-teal"
+href="#courses">
+
+▣ Our Courses
+
+</a>
+
+
+<a
+class="btn btn-outline"
+href="#contact">
+
+♟ Admission Enquiry
+
+</a>
+
+</div>
+
+
+<div class="tagline">
+
+Concept Clarity. Smart Strategy. Sure Selection.
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= HIGHLIGHTS ================= -->
+
+<div class="container highlights">
+
+<div class="highlight-box">
+
+
+<div class="highlight">
+
+<div class="hicon">
+🎓
+</div>
+
+<div>
+
+<h3>
+JMI Entrance
+</h3>
+
+<p>
+Focused preparation for Jamia Millia
+Islamia entrance opportunities.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="highlight">
+
+<div class="hicon">
+🏛
+</div>
+
+<div>
+
+<h3>
+AMU Entrance
+</h3>
+
+<p>
+Structured preparation for Aligarh
+Muslim University entrances.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="highlight">
+
+<div class="hicon">
+👨‍🏫
+</div>
+
+<div>
+
+<h3>
+Expert Faculty
+</h3>
+
+<p>
+Dedicated guidance with an
+exam-focused learning approach.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="highlight">
+
+<div class="hicon">
+🏆
+</div>
+
+<div>
+
+<h3>
+Results Focus
+</h3>
+
+<p>
+Consistent practice, revision
+and performance improvement.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<main>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="content" id="about">
+
+<div class="container top-grid">
+
+
+<div class="panel">
+
+<div class="kicker">
+About TBIT
+</div>
+
+<h2>
+Learn with purpose.
+</h2>
+
+<div class="underline"></div>
+
+<p>
+
+TBIT Ideal Competitive Classes is a focused
+coaching centre in Okhla, New Delhi,
+dedicated to entrance preparation for
+JMI and AMU.
+
+</p>
+
+</div>
+
+
+<div class="panel">
+
+<div class="kicker">
+Why Choose TBIT?
+</div>
+
+<ul class="checks">
+
+<li>
+Specialized JMI & AMU preparation
+</li>
+
+<li>
+Concept-focused learning
+</li>
+
+<li>
+Regular practice & revision
+</li>
+
+<li>
+Student-focused guidance
+</li>
+
+<li>
+Exam-oriented strategy
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="panel" id="faculty">
+
+<div class="kicker">
+Our Approach
+</div>
+
+<h3>
+Preparation that stays focused.
+</h3>
+
+<p>
+
+Clear concepts, targeted questions,
+regular revision and a disciplined
+study routine — all working toward
+stronger exam readiness.
+
+</p>
+
+</div>
+
+
+<div class="panel admission">
+
+<div class="kicker">
+Admissions
+</div>
+
+<h3>
+New batches starting soon!
+</h3>
+
+<p>
+
+Enquire now for current batch details,
+timings and admission information.
+
+</p>
+
+<a
+class="btn btn-teal"
+href="tel:+919870167074">
+
+Enquire Now →
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= COURSES ================= -->
+
+<section class="section" id="courses">
+
+<div class="container">
+
+
+<div class="section-head">
+
+<div class="kicker">
+Courses We Offer
+</div>
+
+<h2>
+Build your path to the entrance exam.
+</h2>
+
+<p>
+
+Choose focused preparation built around
+the entrance opportunities you are targeting.
+
+</p>
+
+</div>
+
+
+<div class="course-grid">
+
+
+<div class="course">
+
+<div class="course-icon">
+🏛
+</div>
+
+<h3>
+JMI Entrance
+</h3>
+
+<p>
+
+Focused preparation for entrance
+opportunities at Jamia Millia Islamia,
+with concept building and
+exam-oriented practice.
+
+</p>
+
+</div>
+
+
+<div class="course">
+
+<div class="course-icon">
+🎓
+</div>
+
+<h3>
+AMU Entrance
+</h3>
+
+<p>
+
+Structured preparation for Aligarh
+Muslim University entrance examinations
+with regular practice and revision.
+
+</p>
+
+</div>
+
+
+<div class="course">
+
+<div class="course-icon">
+⚡
+</div>
+
+<h3>
+Competitive Preparation
+</h3>
+
+<p>
+
+A disciplined learning environment
+to improve accuracy, consistency
+and confidence before the exam.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= WHY TBIT ================= -->
+
+<section class="section why" id="why">
+
+<div class="container why-grid">
+
+
+<div class="why-card">
+
+<div class="kicker">
+Why TBIT?
+</div>
+
+<h2>
+
+Less distraction.
+<br>
+
+More direction.
+
+</h2>
+
+<p>
+
+We keep the learning experience centered
+on what students need most: understanding,
+practice, revision and exam confidence.
+
+</p>
+
+</div>
+
+
+<div class="why-list">
+
+
+<div class="why-item">
+
+<span>
+✓
+</span>
+
+<b>
+Concept Clarity
+</b>
+
+Strong fundamentals before
+advanced practice.
+
+</div>
+
+
+<div class="why-item">
+
+<span>
+✓
+</span>
+
+<b>
+Exam Strategy
+</b>
+
+Focused preparation for
+competitive entrances.
+
+</div>
+
+
+<div class="why-item">
+
+<span>
+✓
+</span>
+
+<b>
+Regular Practice
+</b>
+
+Consistent questions
+and revision.
+
+</div>
+
+
+<div class="why-item">
+
+<span>
+✓
+</span>
+
+<b>
+Guidance
+</b>
+
+Student-focused support
+throughout preparation.
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta" id="results">
+
+<div class="container cta-inner">
+
+<div class="kicker">
+Start Your Preparation
+</div>
+
+<h2>
+
+Your goal deserves a serious
+preparation plan.
+
+</h2>
+
+<p>
+
+Talk to TBIT Ideal Competitive Classes
+about admissions, batches and
+entrance preparation.
+
+</p>
+
+
+<a
+class="btn btn-teal"
+href="tel:+919870167074">
+
+Call +91 98701 67074
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+
+<div class="section-head">
+
+<div class="kicker">
+Contact Us
+</div>
+
+<h2>
+Come visit TBIT.
+</h2>
+
+<p>
+Located in Zakir Nagar, Okhla, New Delhi.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-box">
+
+<span>
+Address
+</span>
+
+<b>
+
+297, Opp. A, Zakir Nagar,
+Okhla, New Delhi,
+Delhi 110025, India
+
+</b>
+
+</div>
+
+
+<div class="contact-box">
+
+<span>
+Call / WhatsApp
+</span>
+
+<b>
++91 98701 67074
+</b>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container footer-row">
+
+<div>
+
+© 2026
+
+<strong>
+TBIT Ideal Competitive Classes
+</strong>
+
+. All Rights Reserved.
+
+</div>
+
+<div>
+JMI • AMU • Entrance Preparation
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
